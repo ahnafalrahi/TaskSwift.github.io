@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    min-height:100vh;
+    /* background: linear-gradient(135deg,); */
+    background-color: rgb(39, 39, 39);
+    padding: 10px;
+}
+
+.nav {
+    color: white;
+    background-color: #414141;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    border-bottom: 2px solid #363636; /* ===> optional */
+    
+  }
+
+.logo{
+    height: 50px;
+    width: 50px;
+    filter: drop-shadow(  5px 5px 10px #000000);
+
+    
+  }
+  .navbar-part-2 {
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+  }
+
+
+
+  
+  /* logo */
+  .nav h2 {
+    font-size: 1.8vw;
+    font-weight: 700;
+    
+  }
+
+  h1{
+    filter: drop-shadow(  5px 5px 3px #000000);
+    /* box-shadow: 5px 5px 10px cyan; */
+    
+  }
+  
+  /* heading bars */
+  .nav h4 {
+    font-size: 1.1vw;
+    background: linear-gradient(to right,rgb(0, 255, 213),rgb(16, 155, 197));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .todo-app h1{
+    margin-top: 2vw;
+    background: linear-gradient(to right,rgb(0, 255, 213),rgb(0, 4, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #202020;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-top: 2vw;
+    box-shadow: 5px 5px 10px cyan;
+    border-radius: 20px;
+  }
+
+  input{
+    display: inline-block;
+    width: 100%;
+    color: white;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 1vw;
+    font-weight: 600;
+    /* text-align: center; */
+    overflow: hidden;
+    overflow-wrap: break-word;
+
+    
+  }
+
+  button{
+    color: rgb(252, 242, 242);
+    border: none;
+    outline: none;
+    padding: 1vw 2vw;
+    background: linear-gradient(to right,rgb(0, 255, 213),rgb(0, 4, 255)) ;
+    border-radius: 30px;
+    cursor: pointer;
+    filter: drop-shadow(  5px 5px 10px #000000)
+  }
+
+  ul li{
+    color: white;
+    list-style: none;
+    font-size: 2vw;
+    padding: 12px 8px 12px 80px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    overflow: hidden;
+    
+  } 
+
+  ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(icon/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: vw;
+    left: 2vw;
+
+  }
+
+  ul li.checked{
+    color: white;
+    text-decoration: line-through;
+  }
+
+  ul li.checked::before{
+    background-image: url(icon/checked.png);
+  }
+
+
+  ul li span{
+    position: absolute;
+    /* margin-top: 1.3vw; */
+    right: 1.6vw;
+    top: 1vw;
+    width: 2vw;
+    height: 2vw;
+    line-height: 2vw;
+    color:rgb(0, 255, 213) ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+  }
+
+  ul li span:hover{
+    border-radius: 50%;
+    background-color: #2e2e2e;
+  }
+
+  ul li:hover{
+    border-radius: 20px;
+    background-color: #414141;
+  }
+
+  /* .textarea-for{
+    padding: 0.5em;
+    border-radius: 15px;
+    border-width:2px;
+    width: 100%;
+    resize: none;
+    } */
+
+
+    /* .list-container {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow: auto;
+    }
+    .list-container::-webkit-scrollbar{
+      width: 0px;
+      height: none;
+    } */
+@media(max-width:576px){
+  ul li{
+    top: 1vw;
+    left: 2vw;
+  }
+  ul li span{
+
+    margin-top: 20px;
+    font-size: 29px;
+    right: 4vw;
+  }
+
+  input{
+    height: 60px;
+    font-size: 4.5vw;
+    overflow: hidden;
+    
+  }
+
+  #add{
+    height: 60px;
+    width:70px ;
+    border-radius: 20px;
+    
+  }
+}
+
+body::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background:#202020 ;
+
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(cyan,blue);
+
+  border-radius: 20px;
+}
+body {
+  overflow-x: hidden;
+}
