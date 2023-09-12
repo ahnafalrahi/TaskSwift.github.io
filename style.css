@@ -144,7 +144,7 @@
   }
 
   ul li.checked{
-    color: rgba(255, 255, 255, 0.63);
+    color: gray;
     text-decoration: line-through;
   }
 
