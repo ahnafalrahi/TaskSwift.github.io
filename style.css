@@ -113,6 +113,25 @@
     filter: drop-shadow(  5px 5px 10px #000000)
   }
 
+  #add{
+   box-shadow: 0 0 5px rgb(0, 13, 128),
+   0 0 25px  rgb(0, 13, 128);
+  }
+  #add:hover{
+    box-shadow: 0 0 5px  rgb(0, 13, 128),
+    0 0 25px  rgb(0, 13, 128), 0 0 50px  rgb(0, 13, 128) ,
+    0 0 100px  rgb(0, 13, 128), 0 0 200px  rgb(0, 13, 128);
+    transition: 2s;
+  }
+
+  button:active{
+    background:linear-gradient(to right,blue,purple);
+  }
+
+  button:hover{
+    background:linear-gradient(to right,blue,purple);
+  }
+
   ul li{
     color: white;
     list-style: none;
